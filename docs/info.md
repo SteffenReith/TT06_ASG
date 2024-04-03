@@ -20,7 +20,7 @@ The SpinalHDL based version (including more info about ASGs) can be found at htt
 Used connection polynoms:
 
   private val connPolyStrR1 = "x^31+x^3+1"
-  private val connPolyStrR2 = "x^127+x+1"
+  private val connPolyStrR2 = "x^63+x+1"
   private val connPolyStrR3 = "x^89+x^38+1"
 
 ## How to test
