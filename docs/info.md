@@ -17,6 +17,12 @@ after 3.89*10^38 years (approximately 2.78*10^28 times the age of the universe)!
 
 The SpinalHDL based version (including more info about ASGs) can be found at https://github.com/SteffenReith/ASG
 
+Used connection polynoms:
+
+  private val connPolyStrR1 = "x^31+x^3+1"
+  private val connPolyStrR2 = "x^127+x+1"
+  private val connPolyStrR3 = "x^89+x^38+1"
+
 ## How to test
 
 Simply load the registers R1 (loadit==1), R2 (loadit == 2) and R3 (loadit == 3) with non-null seed data. Set loadit to 0 and enable to 1. A new bit is generated 
