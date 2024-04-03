@@ -13,7 +13,7 @@ This is a naive implementation of an "Alternating Step Generator" (ASG) to produ
 
 An ASG consists of three different "Linear Shift Feedback Registers" (LSFR), which must be coupled appropriately. The provided configuration is expected to have 
 a period length of 226156424186320902518104893031800133178333732395566208938371914392362024959 cycles. If the chip could be operated by 1GHz this would be reached
-after 7.17*10^57 years (approximately 5.12*10^47 times the age of the universe)! 
+after 3.89*10^38 years (approximately 2.78*10^28 times the age of the universe)! 
 
 The SpinalHDL based version (including more info about ASGs) can be found at https://github.com/SteffenReith/ASG
 

@@ -17,6 +17,7 @@ project:
   source_files:        
     - "SteffenReith_ASGTop.v"
     - "ASG.v"
+    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
