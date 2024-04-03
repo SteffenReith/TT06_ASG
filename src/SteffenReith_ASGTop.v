@@ -25,6 +25,9 @@ module tt_um_SteffenReith_ASGTop (
   // Set the directions for the IOs (unused at all) 
   assign uio_oe = 8'bZZZZ_ZZZZ;
 
+  // Set unused outputs to Z
+  assign uo_out[7:1] = 7'bZZZZ_ZZZ;
+
   //Instantiate the ASG and connect the signals
   ASG asg (
     .loadIt(ui_in[1:0]),
