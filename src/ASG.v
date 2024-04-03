@@ -105,14 +105,14 @@ module LSFR_1 (
   input  wire          reset
 );
 
-  wire       [126:0]  fsRegN;
-  reg        [126:0]  fsReg;
+  wire       [62:0]   fsRegN;
+  reg        [62:0]   fsReg;
   wire                taps_0;
   wire                taps_1;
   reg                 genBit;
 
   assign taps_0 = fsReg[0];
-  assign taps_1 = fsReg[126];
+  assign taps_1 = fsReg[62];
   always @(*) begin
     genBit = (taps_0 ^ taps_1);
     if(loadIt) begin
@@ -121,10 +121,10 @@ module LSFR_1 (
   end
 
   assign newBit = fsReg[0];
-  assign fsRegN = {genBit,fsReg[126 : 1]};
+  assign fsRegN = {genBit,fsReg[62 : 1]};
   always @(posedge clk) begin
     if(reset) begin
-      fsReg <= 127'h00000000000000000000000000000000;
+      fsReg <= 63'h0000000000000000;
     end else begin
       if(enable) begin
         fsReg <= fsRegN;
